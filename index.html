@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational Chatbot</title>
+</head>
+<body>
+    <h1>Motivational Chatbot</h1>
+
+    <form onsubmit="getChatbot(); return false;"> 
+        <input 
+            type="text" 
+            name="query" 
+            id="query" 
+            placeholder="Type something... (e.g., motivate me)"
+        />
+        <button type="submit">Get</button> 
+    </form>
+
+    <div id="result" style="white-space: pre-wrap; margin-top: 1rem;"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
